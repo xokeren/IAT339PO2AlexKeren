@@ -2,70 +2,72 @@
 /* CSS Document */
 
 * {
-    margin: 0;
-    font-family: 'Hammersmith One', sans-serif;
+	margin: 0;
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 body {
-    background-color: #F8A050;
-    /*
-    background: url(../img/pizzaCover.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    */
+	background-color: #F8A050;
+	/*
+	background: url(../img/pizzaCover.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	*/
 }
 
 h1 {
-    font-size: 3em;
-    display: inline;
-    color: #FFF;
+	font-size: 3em;
+	display: inline;
+	color: #FFF;
 }
 h2 {
-    margin-bottom: 1em;
-    color: #FFF;
-    margin-top: 3em;
+	margin-bottom: 1em;
+	color: #FFF;
+	margin-top: 3em;
 }
 p {
-    font-family: 'Open Sans', sans-serif;
-    color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
 }
 .smaller {
-    font-size: 0.75rem;
+	font-size: 0.75rem;
 }
 .topNav {
-    width: 100%;
-    height: 14vh;
-    line-height: 14vh;
-    color: #FFF;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    text-align: center;
-    background-color: #F8A050;
+	width: 100%;
+	height: 14vh;
+	line-height: 14vh;
+	color: #FFF;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	text-align: center;
+	background-color: #F8A050;
 }
 .accountIcon {
-    position: absolute;
-    right: 2em;
-    height: 8vh;
-    display: inline;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+	position: absolute;
+	right: 2em;
+	height: 8vh;
+	display: inline;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
 }
 .mainWindow {
-    width: 80vw;
-    height: 86vh;
-    overflow: scroll;
+	width: 80vw;
+	height: 86vh;
+	overflow: scroll;
 }
 .standardPadding {
-    padding: 3em 5em;
+	padding: 3em 5em;
 }
 .itemPadding {
-    padding-top: 0;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 3em;
+	padding-top: 0;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 3em;
 }
-
+.productImage {
+    margin: auto;
+}
 .button {
     background-color: #FFF;
     border: none;
@@ -76,16 +78,21 @@ p {
     display: inline-block;
     font-size: 16px;
 }
+.productButton {
+margin: auto;
+margin-top: 2em;
+text-align: center;
+}
 
 
 .shoppingCart {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 20vw;
-    height: 86vh;
-    border-left: solid;
-    border-left-color: #FFF;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 20vw;
+	height: 86vh;
+	border-left: solid;
+	border-left-color: #FFF;
 }
 
 .row, 
@@ -181,5 +188,3 @@ p {
         margin-left: 0;
     }
 }
-
-
