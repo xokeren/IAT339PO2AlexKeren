@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+body {
+	background-color: #F8A050;
+	/*
+	background: url(../img/pizzaCover.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	*/
+}
+
+h1 {
+	font-size: 3em;
+	display: inline;
+	color: #FFF;
+}
+h2 {
+	margin-bottom: 1em;
+	color: #FFF;
+	margin-top: 3em;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+}
+.smaller {
+	font-size: 0.75rem;
+}
+.topNav {
+	width: 100%;
+	height: 14vh;
+	line-height: 14vh;
+	color: #FFF;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	text-align: center;
+	background-color: #F8A050;
+}
+.accountIcon {
+	position: absolute;
+	right: 2em;
+	height: 8vh;
+	display: inline;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+.mainWindow {
+	width: 80vw;
+	height: 86vh;
+	overflow: scroll;
+}
+.standardPadding {
+	padding: 3em 5em;
+}
+
+.button {
+    background-color: #FFF;
+    border: none;
+    color: #F8A050;
+    padding: 0.75em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.shoppingCart {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 20vw;
+	height: 86vh;
+	border-left: solid;
+	border-left-color: #FFF;
+}
+
+.row, 
+.column {
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    position: relative;
+    float: left;
+}
+
+.column + .column {
+    margin-left: 1.6%;
+}
+
+.column-1 {
+    width: 6.86666666667%;
+}
+
+.column-2 {
+    width: 15.3333333333%;
+}
+
+.column-3 {
+    width: 23.8%;
+}
+
+.column-4 {
+    width: 32.2666666667%;
+}
+
+.column-5 {
+    width: 40.7333333333%;
+}
+
+.column-6 {
+    width: 49.2%;
+}
+
+.column-7 {
+    width: 57.6666666667%;
+}
+
+.column-8 {
+    width: 66.1333333333%;
+}
+
+.column-9 {
+    width: 74.6%;
+}
+
+.column-10 {
+    width: 83.0666666667%;
+}
+
+.column-11 {
+    width: 91.5333333333%;
+}
+
+.column-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+    .column-1, 
+    .column-2, 
+    .column-3, 
+    .column-4, 
+    .column-5, 
+    .column-6, 
+    .column-7, 
+    .column-8, 
+    .column-9, 
+    .column-10, 
+    .column-11, 
+    .column-12 {
+        width: auto;
+        float: none;
+    }
+
+    .column + .column {
+        margin-left: 0;
+    }
+}
