@@ -35,6 +35,7 @@ p {
 	font-size: 0.75rem;
 }
 .topNav {
+	z-index: 999;
 	width: 100%;
 	height: 14vh;
 	line-height: 14vh;
@@ -52,6 +53,7 @@ p {
 	padding-bottom: 3vh;
 }
 .mainWindow {
+	z-index: 997;
 	width: 80vw;
 	height: 86vh;
 	overflow: scroll;
@@ -93,15 +95,19 @@ left: 50%;
 transform: translate(-50%, 0)
 }
 
-.shoppingCart {
+#shoppingCart {
+	z-index: 998;
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	width: 20vw;
 	height: 86vh;
+	width: 20vw;
 	border-left: solid;
 	border-left-color: #FFF;
+	background-color: #F8A050;
+	transition: width 0.5s ease-out;
 }
+
 
 .row, 
 .column {
