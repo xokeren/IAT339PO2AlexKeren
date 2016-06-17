@@ -8,14 +8,16 @@
 }
 
 body {
+<<<<<<< 592b01c9ff0e3d098c4cf6d525bb6423e68386e1
 	background-color: #BF5B04;
 	/*
+=======
+>>>>>>> 5df80c42a0da72766c22e128cc91e555b944b3f8
 	background: url(../img/pizzaCover.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	*/
 }
 
 h1 {
@@ -24,9 +26,9 @@ h1 {
 	color: #FFF;
 }
 h2 {
+	font-size: 2em;
 	margin-bottom: 1em;
-	color: #FFF;
-	margin-top: 3em;
+	color: #E54F51;
 }
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -37,14 +39,19 @@ p {
 }
 .topNav {
 	z-index: 999;
+	position: fixed;
 	width: 100%;
 	height: 14vh;
 	line-height: 14vh;
 	color: #FFF;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	text-align: center;
+<<<<<<< 592b01c9ff0e3d098c4cf6d525bb6423e68386e1
 	background-color: #A60303;
 	z-index: 999;
+=======
+	background-color: #E54F51;
+>>>>>>> 5df80c42a0da72766c22e128cc91e555b944b3f8
 }
 .accountIcon {
 	position: absolute;
@@ -54,15 +61,42 @@ p {
 	padding-top: 3vh;
 	padding-bottom: 3vh;
 }
-.mainWindow {
+#mainWindow {
 	z-index: 997;
-	width: 80vw;
+	width: 100vw;
 	height: 86vh;
 	overflow: scroll;
+<<<<<<< 592b01c9ff0e3d098c4cf6d525bb6423e68386e1
 	overflow-x: hidden;
+=======
+	transition: width 0.5s ease-out;
+	padding-top: 40vh;
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+50&0+0,0.7+50 */
+
+background: -moz-linear-gradient(top,  rgba(125,126,125,0) 0%, rgba(14,14,14,0.7) 50%); /* FF3.6-15 */
+
+background: -webkit-linear-gradient(top,  rgba(125,126,125,0) 0%,rgba(14,14,14,0.7) 50%); /* Chrome10-25,Safari5.1-6 */
+
+background: linear-gradient(to bottom,  rgba(125,126,125,0) 0%,rgba(14,14,14,0.7) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007d7e7d', endColorstr='#b30e0e0e',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+
+>>>>>>> 5df80c42a0da72766c22e128cc91e555b944b3f8
 }
+
 .standardPadding {
-	padding: 3em 5em;
+	padding-left: 14em;
+	padding-right: 14em;
+}
+.morePadding {
+	padding-left: 14em;
+	padding-right: 14em;
 }
 .itemPadding {
 	padding-top: 0;
@@ -74,9 +108,9 @@ p {
     margin: auto;
 }
 .button {
-    background-color: #FFF;
+	background-color: #E54F51;
     border: none;
-    color: #F8A050;
+    color: #FFF;
     padding: 0.75em 1em;
     text-align: center;
     text-decoration: none;
@@ -96,7 +130,6 @@ margin-top: 2em;
 text-align: center;
 position: absolute;
 bottom: 2em;
-
 }
 
 #shoppingCart {
@@ -105,29 +138,30 @@ bottom: 2em;
 	bottom: 0;
 	right: 0;
 	height: 86vh;
-	width: 20vw;
+	width: 0;
 	border-left: solid;
 	border-left-color: #FFF;
+<<<<<<< 592b01c9ff0e3d098c4cf6d525bb6423e68386e1
 	background-color: #BF5B04;
 	transition: width 0.5s ease-out;
 	overflow: hidden;
 	z-index: 1;
+=======
+	transition: width 0.5s ease-out;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.7);
+>>>>>>> 5df80c42a0da72766c22e128cc91e555b944b3f8
 }
 .shoppingCartTable {
 	display: table;
-	width: 40vw;
+	width: 72vw;
 }
 .shoppingCartRow {
 	display: table-row;
 }
 .shoppingCartColumn {
 	height: 86vh;
-	width: 20vw;
-	display: table-cell;
-}
-.shoppingCartColumn2 {
-	height: 86vh;
-	width: 20vw;
+	width: 24vw;
 	display: table-cell;
 }
 
