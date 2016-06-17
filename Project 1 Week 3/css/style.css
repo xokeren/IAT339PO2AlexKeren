@@ -3,11 +3,12 @@
 
 * {
 	margin: 0;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'Mitr', sans-serif;
+
 }
 
 body {
-	background-color: #F8A050;
+	background-color: #BF5B04;
 	/*
 	background: url(../img/pizzaCover.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -42,7 +43,8 @@ p {
 	color: #FFF;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	text-align: center;
-	background-color: #F8A050;
+	background-color: #A60303;
+	z-index: 999;
 }
 .accountIcon {
 	position: absolute;
@@ -57,6 +59,7 @@ p {
 	width: 80vw;
 	height: 86vh;
 	overflow: scroll;
+	overflow-x: hidden;
 }
 .standardPadding {
 	padding: 3em 5em;
@@ -79,6 +82,8 @@ p {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    text-transform: uppercase;
+
 }
 .productButton {
 margin: auto;
@@ -103,9 +108,10 @@ bottom: 2em;
 	width: 20vw;
 	border-left: solid;
 	border-left-color: #FFF;
-	background-color: #F8A050;
+	background-color: #BF5B04;
 	transition: width 0.5s ease-out;
 	overflow: hidden;
+	z-index: 1;
 }
 .shoppingCartTable {
 	display: table;
