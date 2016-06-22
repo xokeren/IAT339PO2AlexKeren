@@ -69,12 +69,10 @@ p {
 	width: 100vw;
 	height: 86vh;
 	transition: width 0.5s ease-out;
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.6);
 }
 
 .standardPadding {
-	padding-left: 14em;
-	padding-right: 14em;
 }
 .morePadding {
 	padding-left: 14em;
@@ -127,7 +125,7 @@ bottom: 2em;
 	overflow: hidden;
 	background-color: #E54F51;
 }
-.x {
+.arrow {
 	position: absolute;
 	top: 1em;
 	left: 1em;

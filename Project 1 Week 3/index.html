@@ -171,10 +171,12 @@
 </div>
 </div>
 
+<!-- this is a dimmed overlay that appears over the main window when the shopping cart is expanded -->
 <a href="#" onclick="
 document.getElementById('dim').style.display = 'none';
-document.getElementById('shoppingCart').style.width = '0'; document.getElementById('mainWindow').style.width = '100vw';
-document.getElementById('mainWindowDim').style.width = '100vw';">
+document.getElementById('arrowDiv').style.display = 'none';
+document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw';
+document.getElementById('mainWindowDim').style.width = '76vw';">
 <div class="mainWindowDim" id="dim" style="display: none;">
 </div>
 </a>
@@ -185,12 +187,13 @@ document.getElementById('mainWindowDim').style.width = '100vw';">
 <!-- x button to close shopping cart -->
 <a href="#" onclick="
 document.getElementById('dim').style.display = 'none';
-document.getElementById('shoppingCart').style.width = '0'; document.getElementById('mainWindow').style.width = '100vw';
-document.getElementById('mainWindowDim').style.width = '100vw';">
-<div class="x">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" height="100%"><style type="text/css">  
-	.x{fill:#FFFFFF;}
-</style><polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/></svg>
+document.getElementById('arrowDiv').style.display = 'none';
+document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw';
+document.getElementById('mainWindowDim').style.width = '76vw';">
+<div class="arrow" id="arrowDiv" style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%"><style type="text/css">  
+	.arrow{fill:#FFFFFF;}
+</style><polygon class="arrow" points="1.4 42 0 40.6 19.7 21 0 1.4 1.4 0 22.4 21 "/></svg>
 </div>
 </a>
 
@@ -205,7 +208,8 @@ document.getElementById('mainWindowDim').style.width = '100vw';">
 <!-- confirm order button -->
 
 <div class="orderButton">
-<a href="#" class="button" onClick="document.getElementById('shoppingCart').style.width = '48vw'; document.getElementById('dim').style.display = 'block';">CHECKOUT</a>
+<a href="#" class="button" onClick="document.getElementById('shoppingCart').style.width = '48vw'; document.getElementById('dim').style.display = 'block';
+document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a>
 </div>
 
 
