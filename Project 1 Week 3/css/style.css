@@ -3,16 +3,11 @@
 
 * {
 	margin: 0;
-	font-family: 'Mitr', sans-serif;
+	font-family: "Hammersmith One", sans-serif;
 
 }
 
 body {
-<<<<<<< 592b01c9ff0e3d098c4cf6d525bb6423e68386e1
-	background-color: #BF5B04;
-	/*
-=======
->>>>>>> 5df80c42a0da72766c22e128cc91e555b944b3f8
 	background: url(../img/pizzaCover.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -46,12 +41,8 @@ p {
 	color: #FFF;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	text-align: center;
-<<<<<<< 592b01c9ff0e3d098c4cf6d525bb6423e68386e1
-	background-color: #A60303;
-	z-index: 999;
-=======
+
 	background-color: #E54F51;
->>>>>>> 5df80c42a0da72766c22e128cc91e555b944b3f8
 }
 .accountIcon {
 	position: absolute;
@@ -66,28 +57,14 @@ p {
 	width: 100vw;
 	height: 86vh;
 	overflow: scroll;
-<<<<<<< 592b01c9ff0e3d098c4cf6d525bb6423e68386e1
-	overflow-x: hidden;
-=======
 	transition: width 0.5s ease-out;
 	padding-top: 40vh;
-	
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+50&0+0,0.7+50 */
-
-background: -moz-linear-gradient(top,  rgba(125,126,125,0) 0%, rgba(14,14,14,0.7) 50%); /* FF3.6-15 */
-
-background: -webkit-linear-gradient(top,  rgba(125,126,125,0) 0%,rgba(14,14,14,0.7) 50%); /* Chrome10-25,Safari5.1-6 */
-
-background: linear-gradient(to bottom,  rgba(125,126,125,0) 0%,rgba(14,14,14,0.7) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007d7e7d', endColorstr='#b30e0e0e',GradientType=0 ); /* IE6-9 */
+	background-color: black;
 
 
 
 
 
-
->>>>>>> 5df80c42a0da72766c22e128cc91e555b944b3f8
 }
 
 .standardPadding {
@@ -141,16 +118,15 @@ bottom: 2em;
 	width: 0;
 	border-left: solid;
 	border-left-color: #FFF;
-<<<<<<< 592b01c9ff0e3d098c4cf6d525bb6423e68386e1
-	background-color: #BF5B04;
 	transition: width 0.5s ease-out;
 	overflow: hidden;
-	z-index: 1;
-=======
-	transition: width 0.5s ease-out;
-	overflow: hidden;
-	background-color: rgba(0,0,0,0.7);
->>>>>>> 5df80c42a0da72766c22e128cc91e555b944b3f8
+	background-color: #E54F51;
+}
+.x {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	width: 1em;
 }
 .shoppingCartTable {
 	display: table;
@@ -161,7 +137,7 @@ bottom: 2em;
 }
 .shoppingCartColumn {
 	height: 86vh;
-	width: 24vw;
+	max-width: 24vw;
 	display: table-cell;
 }
 
