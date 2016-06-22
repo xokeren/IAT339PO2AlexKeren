@@ -60,11 +60,16 @@ p {
 	transition: width 0.5s ease-out;
 	padding-top: 40vh;
 	background-color: black;
-
-
-
-
-
+}
+.mainWindowDim {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 998;
+	width: 100vw;
+	height: 86vh;
+	transition: width 0.5s ease-out;
+	background: rgba(0,0,0,0.7);
 }
 
 .standardPadding {
