@@ -200,15 +200,19 @@ color: #E54F51;
 .shoppingCartTable {
 	display: table;
 	width: 72vw;
+	margin: 0;
 }
 .shoppingCartRow {
 	display: table-row;
+	margin: 0;
 }
 .shoppingCartColumn {
 	height: 86vh;
 	max-width: 24vw;
 	display: table-cell;
 	margin: 0;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .row, 
