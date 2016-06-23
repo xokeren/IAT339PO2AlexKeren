@@ -33,6 +33,12 @@ h3 {
 	margin-top: 1em;
 }
 
+h4 {
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
 p, form {
 	font-family: 'Open Sans', sans-serif;
 	color: #FFF;
@@ -84,7 +90,7 @@ input [radio]{
 	height: 86vh;
 	overflow: scroll;
 	transition: width 0.5s ease-out;
-	padding-top: 54vh;
+	padding-top: 52vh;
 	background-color: black;
 }
 .mainWindowDim {
@@ -162,13 +168,6 @@ bottom: 2em;
 	transition: width 0.5s ease-out;
 	overflow: hidden;
 	background-color: #E54F51;
-}
-
-.shoppingCartTitle {
-	margin: 1em 0 0 0.5em;
-	font-size: 2em;
-	text-transform: uppercase;
-	border-bottom: #fff 0.1em solid;
 }
 
 .shoppingCartItem,.shoppingCartItemPrice {
