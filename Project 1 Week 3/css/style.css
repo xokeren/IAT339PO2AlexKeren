@@ -30,11 +30,12 @@ h3 {
 }
 
 h4 {
-	font-size: 2em;
+	font-size: 1.5em;
 	text-transform: uppercase;
 	color: #fff;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 p, form {
@@ -114,7 +115,7 @@ input [radio]{
 }
 .morePadding {
 	padding-left: 0;
-	padding-right: 20em;
+	padding-right: 16em;
 	padding-bottom: 1em;
 }
 .itemPadding {
@@ -183,13 +184,12 @@ margin: auto;
 margin-top: 2em;
 position: absolute;
 bottom: 2em;
+width: 100%;
 }
 .orderButton {
 text-align: center;
 background-color: #FFF;
 color: #E54F51;
-
-width: 18vw;
 }
 
 #shoppingCart {
@@ -233,10 +233,12 @@ width: 18vw;
 	display: table;
 	width: 72vw;
 	margin: 0;
+	padding: 0;
 }
 .shoppingCartRow {
 	display: table-row;
 	margin: 0;
+	padding: 0;
 }
 .shoppingCartColumn {
 	height: 86vh;
@@ -245,6 +247,8 @@ width: 18vw;
 	margin: 0;
 	padding-left: 1em;
 	padding-right: 1em;
+	padding-top: 2em;
+	overflow: hidden;
 }
 
 .row, 
