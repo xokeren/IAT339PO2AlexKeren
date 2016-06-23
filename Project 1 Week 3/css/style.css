@@ -170,6 +170,13 @@ bottom: 2em;
 	background-color: #E54F51;
 }
 
+.shoppingCartTitle {
+	margin: 1.5em 0 0 0.5em;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+
 .shoppingCartItem,.shoppingCartItemPrice {
 	font-size: 0.8em;
 	margin: 3em 0 0 1em;
