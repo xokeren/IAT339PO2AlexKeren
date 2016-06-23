@@ -8,11 +8,7 @@
 }
 
 body {
-	background: url(../img/pizzaCover.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+
 }
 
 h1 {
@@ -93,7 +89,11 @@ input [radio]{
 	overflow: scroll;
 	transition: width 0.5s ease-out;
 	padding-top: 52vh;
-	background-color: black;
+		background: url(../img/pizzaCover.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .mainWindowDim {
 	position: fixed;
@@ -122,6 +122,32 @@ input [radio]{
 	padding-left: 2em;
 	padding-right: 2em;
 	padding-bottom: 3em;
+}
+
+.dimmedBG {
+
+padding-top: 8vh;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,131313+100&0+0,1+15,1+100 */
+
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(3,3,3,1) 15%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(3,3,3,1) 15%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(3,3,3,1) 15%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .foodItem img {
