@@ -164,7 +164,7 @@ bottom: 2em;
 }
 
 .shoppingCartTitle {
-	margin-left: 0.5em;
+	margin: 1em 0 0 0.5em;
 	font-size: 2em;
 	text-transform: uppercase;
 	border-bottom: #fff 0.1em solid;

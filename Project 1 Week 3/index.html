@@ -299,17 +299,25 @@ document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a>
 
 <!-- payment options column-->
 <div class="shoppingCartColumn">
+<p class="shoppingCartTitle">Delivery Time</p>
+<form action="">
+    <input type="radio" name="time" value="Now"> Cash
+    <div class="standardPadding"></div>
+    <input type="radio" name="time" value="laterdate"> Later Date <form> <input type="date" name="laterDateTime"></form>
+</form>
+<div class="standardPadding"></div>
+
 <p class="shoppingCartTitle">Payment Option</p>
 
 <form action="">
     <input type="radio" name="payment" value="Cash"> Cash
+    <div class="standardPadding"></div>
     <input type="radio" name="payment" value="Debit"> Debit
+    <div class="standardPadding"></div>
     <input type="radio" name="payment" value="Credit"> Credit 
+    <div class="standardPadding"></div>
     <input type="radio" name="payment" value="Credit"> Gift Card
-
-    Credit Number: <input type="text" name="creditnumber">
-
-
+    <div class="standardPadding"></div>
 </form>
 
 <div class="orderButton">
