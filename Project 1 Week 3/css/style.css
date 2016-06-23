@@ -33,10 +33,28 @@ h3 {
 	margin-top: 1em;
 }
 
-p {
+p, form {
 	font-family: 'Open Sans', sans-serif;
 	color: #FFF;
 }
+
+ form{
+ 	font-size: 0.8em;
+ }
+input {
+	margin-left: 1em;
+	margin-top: 2em;
+}
+
+input [text]{
+	width: 100%;
+}
+
+input [radio]{
+	width: 100%;
+}
+
+
 .smaller {
 	font-size: 0.75rem;
 }
@@ -97,6 +115,14 @@ p {
 	padding-bottom: 3em;
 }
 
+.foodItem img {
+	width: 100%;
+}
+
+.drinkItem{
+	height: 100%;
+}
+
 
 .button {
 	background-color: #E54F51;
@@ -136,6 +162,24 @@ bottom: 2em;
 	overflow: hidden;
 	background-color: #E54F51;
 }
+
+.shoppingCartTitle {
+	margin-left: 0.5em;
+	font-size: 2em;
+	text-transform: uppercase;
+	border-bottom: #fff 0.1em solid;
+}
+
+.shoppingCartItem,.shoppingCartItemPrice {
+	font-size: 0.8em;
+	margin: 3em 0 0 1em;
+	
+}
+ 
+ .topLine {
+ 	border-top: #fff .1em solid;
+ }
+
 .arrow {
 	position: absolute;
 	top: 1em;
