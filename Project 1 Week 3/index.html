@@ -10,15 +10,19 @@
 <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
 <script>
 $(document).ready(function(){
-    $("button").click(function(){
-        $("p").css({"background-color": "yellow", "font-size": "200%"});
+    $("orderButton").click(function(){
+        $("mainPadding").css({"padding": "0"});
     });
 });
 </script>
 
+
 </head>
+
 
 <body>
 
@@ -39,6 +43,8 @@ $(document).ready(function(){
 <!-- main window containing menu items -->
 <div id="mainWindow">
 
+<div class="mainPadding">
+
 <!-- introduction and onboarding for menu selection process -->
 <div class="morePadding">
 <h2>HUNGRY?</h2>
@@ -47,7 +53,6 @@ $(document).ready(function(){
 
 
 <!-- main grid of menu items -->
-<div id="mainPadding">
 
 <!-- food items -->
 <h2>FOOD</h2>
@@ -286,8 +291,8 @@ document.getElementById('mainWindowDim').style.width = '76vw';">
         <p class="shoppingCartItemPrice topLine"> $22.98</p>
     </div>
 </div>
-<!-- confirm order button -->
 
+<!-- confirm order button -->
 <div class="orderButton">
 <a href="#" class="button" onClick="document.getElementById('shoppingCart').style.width = '48vw'; document.getElementById('dim').style.display = 'block';
 document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a>

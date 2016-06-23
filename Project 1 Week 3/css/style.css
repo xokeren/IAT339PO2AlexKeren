@@ -84,7 +84,7 @@ input [radio]{
 	height: 86vh;
 	overflow: scroll;
 	transition: width 0.5s ease-out;
-	padding-top: 40vh;
+	padding-top: 54vh;
 	background-color: black;
 }
 .mainWindowDim {
@@ -97,16 +97,17 @@ input [radio]{
 	transition: width 0.5s ease-out;
 	background: rgba(0,0,0,0.6);
 }
-#mainPadding {
-	padding: 0 14em 0 14em;
+.mainPadding {
+	padding: 0 5em 0 5em;
 }
 .standardPadding {
 	padding-left: 14em;
 	padding-right: 14em;
 }
 .morePadding {
-	padding-left: 14em;
-	padding-right: 14em;
+	padding-left: 0;
+	padding-right: 20em;
+	padding-bottom: 1em;
 }
 .itemPadding {
 	padding-top: 0;
