@@ -25,6 +25,13 @@ h2 {
 	margin-bottom: 1em;
 	color: #E54F51;
 }
+
+h3 {
+	font-size: 1em;
+	color: #E54F51;
+	margin-top: 1em;
+}
+
 p {
 	font-family: 'Open Sans', sans-serif;
 	color: #FFF;
