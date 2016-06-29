@@ -29,15 +29,23 @@ $(document).ready(function(){
 
 
 <!-- nav bar absolutely positioned at top of screen at all times -->
-<div class="topNav">
+<div id="topNav">
+<div class="topNavBanner">
 
 <h1>PIZZA DROP</h1>
 
 <!-- user account icon -->
+<a href="#" onclick="document.getElementById('topNav').style.height = '30vh';">
 <div class="accountIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-365 253.3 90 90" height="100%"><style type="text/css">  
 	.st0{fill:#FFFFFF;}
 </style><path class="st0" d="M-320 253.3c-24.9 0-45 20.2-45 45 0 24.9 20.1 45 45 45s45-20.1 45-45C-275 273.5-295.1 253.3-320 253.3L-320 253.3zM-319.7 294c-7 0-12.7-5.8-12.7-12.7 0-7 5.7-12.8 12.7-12.8 6.9 0 12.5 5.7 12.5 12.8C-307.3 288.3-312.8 294-319.7 294L-319.7 294zM-312.2 297.8c8.9 0 15.1 7.2 15.1 15.2v7.5c0 8.5-8.7 9.8-22.7 9.8 -14.2 0-22.9-1.3-23-9.8V313c0-7.8 6.3-15.2 15.3-15.2C-327.5 297.8-312.2 297.8-312.2 297.8z"/></svg></div>
 
+</a>
+
+</div>
+<div class="topNavUserAccount">
+yo
+</div>
 </div>
 
 <!-- main window containing menu items -->
@@ -63,7 +71,7 @@ $(document).ready(function(){
     
     <!-- menu item -->
     <div class="productImage foodItem"><img class="img-circle" src="img/mashroom_ham_pizza.png" width="100%"></div>
-    <h3 class="productTitle">Mashroom + Ham Pizza </h3>
+    <h3 class="productTitle">HAM + MUSHROOM PIZZA</h3>
     <p class="smaller">Italian tomato sauce, mashroom, ham + mozzarella cheese. 
 </p>
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';
@@ -74,7 +82,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage foodItem"><img class="img-circle" src="img/pepperoni_pizza.png"></div>
-    <h3 class="productTitle">Pepperoni Pizza </h3>
+    <h3 class="productTitle">PEPPERONI PIZZA</h3>
     <p class="smaller">Italian tomato sauce, pepperoni + mozzarella cheese. </p>
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
     
@@ -83,7 +91,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage foodItem"><img class="img-circle" src="img/spicy_pizza.png" width="100%"></div>
-    <h3 class="productTitle">Spicy Pizza </h3>
+    <h3 class="productTitle">SPICY PIZZA</h3>
     <p class="smaller">Italian tomato sauce, Jalapeño peppers, red onions, parsley, tomatoes + mozzarella cheese. 
 .</p>
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
@@ -97,7 +105,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage foodItem"><img class="img-circle" src="img/veggie_pizza.png"></div>
-    <h3 class="productTitle">Vegetarian Pizza </h3>
+    <h3 class="productTitle">VEGETARIAN PIZZA</h3>
     <p class="smaller">Italian tomato sauce, black olives, tomatoes, red bell peppers, green bell peppers, mashrooms + mozzarella cheese.</p>
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
     
@@ -106,7 +114,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage foodItem"><img class="img-circle" src="img/tomato_zucchini_pizza.png"></div>
-    <h3 class="productTitle">Tomato + Zucchini Pizza </h3>
+    <h3 class="productTitle">TOMATO + ZUCCHINI PIZZA</h3>
     <p class="smaller">Italian tomato sauce, tomatoes, zucchinis + mozzarella cheese.</p>
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
     
@@ -115,7 +123,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage foodItem"><img class="img-circle" src="img/veggie_ham_pizza.png"></div>
-    <h3 class="productTitle"> Ham + Veggie Pizza</h3>
+    <h3 class="productTitle">HAM + VEGGIE PIZZA</h3>
     <p class="smaller">Italian tomato sauce, ham, green bell peppers, red bell peppers, black olives, mashrooms + mozzarella cheese.</p>
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
     
@@ -131,7 +139,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     <!-- menu item -->
     <div class="productImage drinkItem"><img class="img-circle" src="img/coca_cola.png"></div>
     
-    <h3 class="productTitle"> Coca Cola</h3>
+    <h3 class="productTitle">COCA-COLA</h3>
      <p class="smaller">$1.00 / Can</p>
     <p class="smaller">$5.25 / 6 Pack</p>
     <p class="smaller">$2.25 / 2 Litre</p>
@@ -142,7 +150,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage drinkItem"><img class="img-circle" src="img/coca_cola_light.png"></div>
-    <h3 class="productTitle"> Coca Cola Light</h3>
+    <h3 class="productTitle">DIET COKE</h3>
     <p class="smaller">$1.00 / Can</p>
     <p class="smaller">$5.25 / 6 Pack</p>
     <p class="smaller">$2.25 / 2 Litre</p>
@@ -154,7 +162,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage drinkItem"><img class="img-circle" src="img/coca_cola_zero.png"></div>
-    <h3 class="productTitle">Coca Cola Zero</h3>
+    <h3 class="productTitle">COKE ZERO</h3>
     <p class="smaller">$1.00 / Can</p>
     <p class="smaller">$5.25 / 6 Pack</p>
     <p class="smaller">$2.25 / 2 Litre</p>
@@ -169,7 +177,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage drinkItem"><img class="img-circle" src="img/sprite.png"></div>
-    <h3 class="productTitle"> Sprite</h3>
+    <h3 class="productTitle">SPRITE</h3>
     <p class="smaller">$1.00 / Can</p>
     <p class="smaller">$5.25 / 6 Pack</p>
     <p class="smaller">$2.25 / 2 Litre</p>
@@ -180,7 +188,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage drinkItem"><img class="img-circle" src="img/sprite_zero.png"></div>
-    <h3 class="productTitle"> Sprite Zero</h3>
+    <h3 class="productTitle">SPRITE ZERO</h3>
     <p class="smaller">$1.00 / Can</p>
     <p class="smaller">$5.25 / 6 Pack</p>
     <p class="smaller">$2.25 / 2 Litre</p>
@@ -191,7 +199,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     
     <!-- menu item -->
     <div class="productImage drinkItem"><img class="img-circle" src="img/water_bottle.png"></div>
-    <h3 class="productTitle">Desani Water</h3>
+    <h3 class="productTitle">DASANI WATER</h3>
     <p class="smaller">$1.50 / 500ml</p>
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
     
@@ -232,6 +240,7 @@ document.getElementById('mainWindowDim').style.width = '76vw';">
 
 <!-- shopping cart items added column-->
 <div class="shoppingCartColumn">
+
 
 <h4>shopping cart</h4>
 <div class="row">
@@ -295,10 +304,10 @@ document.getElementById('mainWindowDim').style.width = '76vw';">
     </div>
 </div>
 
+<div class="test"><a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '48vw'; document.getElementById('dim').style.display = 'block';
+document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a></div>
 <!-- confirm order button -->
 <div class="orderButtonSpacer">
-<a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '48vw'; document.getElementById('dim').style.display = 'block';
-document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a>
 
 </div>
 

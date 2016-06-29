@@ -63,17 +63,26 @@ input [radio]{
 .smaller {
 	font-size: 0.75rem;
 }
-.topNav {
+#topNav {
 	z-index: 999;
 	position: fixed;
 	width: 100%;
 	height: 14vh;
-	line-height: 14vh;
 	color: #FFF;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	text-align: center;
-
 	background-color: #E54F51;
+	transition: height 0.5s ease-out;
+	overflow: hidden;
+}
+.topNavBanner {
+	width: 100%;
+	height: 14vh;
+	line-height: 14vh;
+	text-align: center;
+}
+.topNavUserAccount {
+	width: 100%;
+	height: 16vh;
 }
 .accountIcon {
 	position: absolute;
@@ -165,9 +174,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     padding: 0.75em 1em;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     text-transform: uppercase;
+	
 
 }
 .productButton {
@@ -183,13 +193,14 @@ margin-top: 2em;
 margin: auto;
 margin-top: 2em;
 position: absolute;
-bottom: 2em;
+bottom: 1em;
 width: 100%;
 }
 .orderButton {
 text-align: center;
 background-color: #FFF;
 color: #E54F51;
+width: "100%";
 }
 
 #shoppingCart {
@@ -242,13 +253,16 @@ color: #E54F51;
 }
 .shoppingCartColumn {
 	height: 86vh;
-	max-width: 24vw;
+	width: 24vw;
 	display: table-cell;
 	margin: 0;
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 2em;
-	overflow: hidden;
+}
+.test {
+	width: 100%;
+	background-color: black;
 }
 
 .row, 
