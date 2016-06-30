@@ -241,7 +241,7 @@ width: "100%";
 }
 .shoppingCartTable {
 	display: table;
-	width: 72vw;
+	width: 78vw;
 	margin: 0;
 	padding: 0;
 }
@@ -257,8 +257,11 @@ width: "100%";
 	margin: 0;
 	
 	padding-left: 1em;
-	padding-right: 1em;
-	background-color: #E54F51
+	padding-right: 1.5em;
+	background-color: #E54F51;
+}
+
+#cartOpener {
 }
 
 .shoppingCartColumn {
@@ -273,7 +276,8 @@ width: "100%";
 }
 .test {
 	width: 100%;
-	background-color: black;
+	position: absolute;
+	bottom: 0;
 }
 
 .row, 
