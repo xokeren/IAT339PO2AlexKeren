@@ -209,12 +209,11 @@ width: "100%";
 	bottom: 0;
 	right: 0;
 	height: 86vh;
-	width: 0;
-	border-left: solid;
-	border-left-color: #FFF;
+	width: 6vw;
 	transition: width 0.5s ease-out;
 	overflow: hidden;
-	background-color: #E54F51;
+	
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .shoppingCartTitle {
@@ -251,6 +250,17 @@ width: "100%";
 	margin: 0;
 	padding: 0;
 }
+#shoppingCartOpenClose {
+	height: 86vh;
+	width: 4vw;
+	display: table-cell;
+	margin: 0;
+	
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: #E54F51
+}
+
 .shoppingCartColumn {
 	height: 86vh;
 	width: 24vw;
@@ -259,6 +269,7 @@ width: "100%";
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 2em;
+	background-color: #E54F51;
 }
 .test {
 	width: 100%;
