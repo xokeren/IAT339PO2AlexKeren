@@ -4,6 +4,7 @@
 * {
 	margin: 0;
 	font-family: "Hammersmith One", sans-serif;
+	
 
 }
 
@@ -124,7 +125,7 @@ input [radio]{
 }
 .morePadding {
 	padding-left: 0;
-	padding-right: 16em;
+	padding-right: 24em;
 	padding-bottom: 1em;
 }
 .itemPadding {
@@ -274,10 +275,9 @@ width: "100%";
 	padding-top: 2em;
 	background-color: #E54F51;
 }
+
 .test {
-	width: 100%;
-	position: absolute;
-	bottom: 0;
+
 }
 
 .row, 
