@@ -1,5 +1,8 @@
 @charset "UTF-8";
-/* CSS Document */
+/*
+  MAIN STYLING 
+  Default styling for main.css 
+*/
 
 * {
 	margin: 0;
@@ -62,10 +65,15 @@ input [radio]{
 
 
 
-
 .smaller {
 	font-size: 0.75rem;
 }
+
+
+/*
+  NAVIGATION
+*/
+
 #topNav {
 	z-index: 999;
 	position: fixed;
@@ -83,13 +91,15 @@ input [radio]{
 	line-height: 14vh;
 	text-align: center;
 }
+
+/*
+  ACOUNT USER
+*/
+
 .topNavUserAccount {
 	width: 100%;
 	height: 16vh;
 }
-
-
-
 
 .accountIcon {
 	position: absolute;
@@ -99,6 +109,11 @@ input [radio]{
 	padding-top: 3vh;
 	padding-bottom: 3vh;
 }
+
+
+/*
+  MAIN WINDOW
+*/
 #mainWindow {
 	z-index: 997;
 	width: 94vw;
@@ -122,6 +137,13 @@ input [radio]{
 	transition: width 0.5s ease-out;
 	background: rgba(0,0,0,0.6);
 }
+
+
+/*
+  PADDING
+*/
+
+
 .mainPadding {
 	padding: 0 5em 0 5em;
 }
@@ -141,6 +163,11 @@ input [radio]{
 	padding-bottom: 3em;
 }
 
+
+/*
+  BACKGROUND IMAGE
+*/
+
 .dimmedBG {
 
 padding-top: 8vh;
@@ -157,6 +184,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 }
 
+/*
+  IMAGES
+*/
+
 .foodItem img {
 	width: 50%;
 	height: 50%;
@@ -166,7 +197,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	height: 50%;
 }
 
-
+/*
+  BUTTONS
+*/
 .button {
     border: none;
     padding: 0.75em 1em;
@@ -202,6 +235,10 @@ width: "100%";
 margin-top: 1em;
 }
 
+/*
+  SHOPPING CART
+*/
+
 #shoppingCart {
 	z-index: 997;
 	position: fixed;
@@ -230,17 +267,8 @@ margin-top: 1em;
 	margin: 3em 0 0 1em;
 	
 }
- 
- .topLine {
- 	border-top: #fff .1em solid;
- }
 
-.arrow {
-	position: absolute;
-	top: 1em;
-	left: 1em;
-	width: 1em;
-}
+
 .shoppingCartTable {
 	display: table;
 	width: 78vw;
@@ -296,6 +324,24 @@ margin-top: 1em;
 	padding-top: 6em;
 }
 
+/*
+  LINES/ ARROWS
+*/
+ 
+ .topLine {
+ 	border-top: #fff .1em solid;
+ }
+
+.arrow {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	width: 1em;
+}
+
+
+
+
 .buttonPosition {
 position: absolute;
 bottom: 4em;
@@ -309,10 +355,6 @@ width: 100%;
         width : 100%;
         max-width : 1200px; 
  }
-
-
-
-
 
 .row, 
 .column {
