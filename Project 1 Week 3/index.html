@@ -48,6 +48,23 @@ yo
 </div>
 </div>
 
+<!-- confirmed order page -->
+<div id="shoppingCartConfirmedOrder" style="">
+<div class="confirmedPadding">
+<h2><span style="color: white">CONGRATULATIONS!</span></h2>
+<p>Your order is on the way! Get ready to enjoy the delicious taste of PIZZA DROP.</p>
+<br><br>
+<a href="#" class="button orderButton" onClick="document.getElementById('dim').style.display = 'none'; document.getElementById('mainWindow').style.width = '94vw'; 
+document.getElementById('shoppingCart').style.transform = 'translateX(0)';
+document.getElementById('shoppingCart').style.width = '6vw';
+document.getElementById('shoppingCartConfirmedOrder').style.transform = 'translateX(100vw)';
+document.getElementById('mainWindowDim').style.width = '94vw';
+document.getElementById('arrowDiv').style.display = 'none';">GOT IT!</a>
+
+
+</div>
+</div>
+
 <!-- main window containing menu items -->
 <div id="mainWindow">
 <div class="dimmedBG">
@@ -97,7 +114,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '30vw'; document.getElementById('mainWindow').style.width = '70vw'; document.getElementById('mainWindowDim').style.width = '70vw';">ADD TO CART</a></div>
     
     </div>
-</div>
+
 
 
 <div class="row">
@@ -110,6 +127,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '30vw'; document.getElementById('mainWindow').style.width = '70vw'; document.getElementById('mainWindowDim').style.width = '70vw';">ADD TO CART</a></div>
     
     </div>
+ 
     <div class="column column-4 itemPadding">
     
     <!-- menu item -->
@@ -202,7 +220,7 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
     <h3 class="productTitle">DASANI WATER</h3>
     <p class="smaller">$1.50 / 500ml</p>
     <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '30vw'; document.getElementById('mainWindow').style.width = '70vw'; document.getElementById('mainWindowDim').style.width = '70vw';">ADD TO CART</a></div>
-    
+
     </div>
 </div>
 </div>
@@ -211,9 +229,10 @@ document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></di
 
 <!-- this is a dimmed overlay that appears over the main window when the shopping cart is expanded -->
 <a href="#" onclick="
+
 document.getElementById('dim').style.display = 'none';
-document.getElementById('arrowDiv').style.display = 'none';
-document.getElementById('shoppingCart').style.width = '30vw'; document.getElementById('mainWindow').style.width = '70vw';
+document.getElementById('shoppingCart').style.width = '30vw';
+document.getElementById('mainWindow').style.width = '70vw';
 document.getElementById('mainWindowDim').style.width = '70vw';">
 <div class="mainWindowDim" id="dim" style="display: none;">
 </div>
@@ -222,7 +241,9 @@ document.getElementById('mainWindowDim').style.width = '70vw';">
 <!-- shopping cart absolutely positioned at right side of screen -->
 <div id="shoppingCart">
 
-<!-- x button to close shopping cart -->
+<!-- arrow button to close shopping cart -->
+<!-- SHUT OFF FOR DEBUGGING -->
+<!--
 <a href="#" onclick="
 document.getElementById('dim').style.display = 'none';
 document.getElementById('arrowDiv').style.display = 'none';
@@ -234,13 +255,14 @@ document.getElementById('mainWindowDim').style.width = '70vw';">
 </style><polygon class="arrow" points="1.4 42 0 40.6 19.7 21 0 1.4 1.4 0 22.4 21 "/></svg>
 </div>
 </a>
+-->
 
 <div class="shoppingCartTable">
 <div class="shoppingCartRow">
 
 <!-- shopping cart's open/close tab -->
 <a href="#" id="shoppingCartOpenClose" onclick="document.getElementById('shoppingCart').style.width = '30vw'; document.getElementById('mainWindow').style.width = '70vw'; document.getElementById('mainWindowDim').style.width = '70vw';
-document.getElementById('shoppingCartOpenClose').style.width = '70vw'; document.getElementById('mainWindowDim').style.width = '70vw'; document.getElementById('cartOpener').style.display = 'none';">
+document.getElementById('shoppingCartOpenClose').style.width = '70vw'; document.getElementById('mainWindowDim').style.width = '70vw';">
 
 
 
@@ -264,8 +286,10 @@ document.getElementById('shoppingCartOpenClose').style.width = '70vw'; document.
 
 
 <!-- confirm order button -->
-<div class="test"><a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '54vw'; document.getElementById('dim').style.display = 'block';
-document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a></div>
+<div class="buttonPosition">
+<a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '54vw'; document.getElementById('dim').style.display = 'block';
+document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a>
+</div>
 
 
 
@@ -276,7 +300,7 @@ document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a></div>
 <h4>PAYMENT TYPE</h4>
 
 
-<div class="orderButtonSpacer">
+<div class="buttonPosition">
 <a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '78vw';">VISA</a>
 <a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '78vw';">MASTERCARD</a>
 <a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '78vw';">CASH</a>
@@ -288,16 +312,17 @@ document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a></div>
 <div class="shoppingCartColumn">
 <h4>YOUR LOCATION</h4>
 
-<div class="orderButtonSpacer">
-<a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '78vw';">ORDER</a>
+<div class="buttonPosition">
+<a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '100vw'; document.getElementById('shoppingCart').style.transform = 'translateX(-80vw)';
+document.getElementById('shoppingCartConfirmedOrder').style.transform = 'translateX(-100vw)';">CONFIRM YOUR ORDER</a>
 </div>
 
 </div>
 
 
-</div>
-</div>
 
+</div>
+</div>
 
 
 </body>

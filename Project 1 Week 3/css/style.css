@@ -101,7 +101,7 @@ input [radio]{
 }
 #mainWindow {
 	z-index: 997;
-	width: 100vw;
+	width: 94vw;
 	height: 86vh;
 	overflow: scroll;
 	transition: width 0.5s ease-out;
@@ -116,9 +116,9 @@ input [radio]{
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	z-index: 998;
+	z-index: 997;
 	width: 100vw;
-	height: 86vh;
+	height: 94vh;
 	transition: width 0.5s ease-out;
 	background: rgba(0,0,0,0.6);
 }
@@ -199,19 +199,23 @@ text-align: center;
 background-color: #FFF;
 color: #E54F51;
 width: "100%";
+margin-top: 1em;
 }
 
 #shoppingCart {
-	z-index: 998;
+	z-index: 997;
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	height: 86vh;
 	width: 6vw;
-	transition: width 0.5s ease-out;
+	transition: width 0.5s ease-out,
+	transform 0.5s ease-out;
 	overflow: hidden;
 	
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	
+	
 }
 
 .shoppingCartTitle {
@@ -271,10 +275,31 @@ width: "100%";
 	padding-right: 1em;
 	padding-top: 2em;
 	background-color: #E54F51;
+	position: relative;
+}
+#shoppingCartConfirmedOrder {
+	z-index: 998;
+	height: 86vh;
+	width: 100vw;
+	margin: 0;
+	padding-top: 2em;
+	background-color: #E54F51;
+	position: fixed;
+	bottom: 0;
+	right: -100vw;
+	transition: transform 0.5s ease-out;
 }
 
-.test {
+.confirmedPadding {
+	padding-left: 20em;
+	padding-right: 20em;
+	padding-top: 6em;
+}
 
+.buttonPosition {
+position: absolute;
+bottom: 4em;
+width: 100%;
 }
 
 /*
