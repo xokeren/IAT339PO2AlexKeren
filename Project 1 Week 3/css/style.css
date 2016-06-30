@@ -324,6 +324,11 @@ margin-top: 1em;
 	padding-top: 6em;
 }
 
+.buttonPosition {
+position: absolute;
+bottom: 4em;
+width: 100%;
+}
 /*
   LINES/ ARROWS
 */
@@ -340,13 +345,17 @@ margin-top: 1em;
 }
 
 
+/*
+	PRICE
+*/
+	.price {
+		font-size: 1em;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 700;
+		margin-top: 2em;
+	}
 
-
-.buttonPosition {
-position: absolute;
-bottom: 4em;
-width: 100%;
-}
 
 /*
   GRID
