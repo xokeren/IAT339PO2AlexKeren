@@ -97,8 +97,9 @@ input [radio]{
 */
 
 .topNavUserAccount {
-	width: 100%;
+	width: 40%;
 	height: 16vh;
+	margin: auto;
 }
 
 .accountIcon {
@@ -322,6 +323,13 @@ margin-top: 1em;
 	padding-left: 20em;
 	padding-right: 20em;
 	padding-top: 6em;
+}
+.orderItems {
+	color: white;
+	padding-top: 1em;
+}
+input {
+    width: 100%;
 }
 
 .buttonPosition {

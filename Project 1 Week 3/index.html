@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 </div>
 <div class="topNavUserAccount">
-yo
+<a href="#" class="button orderButton" onclick="document.getElementById('topNav').style.height = '14vh';">Log Out</a>
 </div>
 </div>
 
@@ -288,9 +288,9 @@ document.getElementById('shoppingCartOpenClose').style.width = '70vw'; document.
 
 
 <h4>shopping cart</h4>
-<span style="color: white">1x Pepperoni Pizza $9.99<br>
+<div class="orderItems">1x Pepperoni Pizza $9.99<br>
 1x Coke Zero 2L $2.25
-</span>
+</div>
 
 
 <!-- confirm order button -->
@@ -319,6 +319,19 @@ document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a>
 <!-- address column-->
 <div class="shoppingCartColumn">
 <h4>YOUR LOCATION</h4>
+
+<form>
+  <label for="fname">Name</label><br>
+  <input type="text" id="yourname" name="fname">
+  <label for="fname">Address</label><br>
+  <input type="text" id="youraddress" name="fname">
+  <label for="fname">City</label><br>
+  <input type="text" id="yourcity" name="fname">
+  <label for="fname">Postal Code</label><br>
+  <input type="text" id="yourpostal" name="lname">
+  <label for="fname">Phone</label><br>
+  <input type="text" id="yourphone" name="fname">
+</form>
 
 <div class="buttonPosition">
 <a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '100vw'; document.getElementById('shoppingCart').style.transform = 'translateX(-80vw)';
