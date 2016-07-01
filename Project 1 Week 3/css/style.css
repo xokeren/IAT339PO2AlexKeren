@@ -197,7 +197,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .drinkItem img{
 	height: 50%;
 }
+/* PRODUCT BOX */
 
+.boxes {
+  display:table;
+  width: 100%;
+  height: 100%;
+}
+
+
+.box {
+  display: table-cell;
+  text-align: center;
+  vertical-align:middle;
+  height: 25em;
+  position: relative;
+  margin-bottom: 2em;
+
+}
+
+@media (max-width: 420px) {
+    .box {
+        display: block;
+        width: 100%;
+    }
+}
 /*
   BUTTONS
 */
@@ -216,6 +240,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 background-color: #E54F51;
 color: #FFF;
 text-align: center;
+width: 90%;
+margin-left: 2%;
+margin-right: 2%;
+position: absolute;
+bottom: 0;
+
 }
 .productButtonSpacer {
 margin: auto;
@@ -356,12 +386,13 @@ width: 100%;
 /*
 	PRICE
 */
-	.price {
+.price {
 		font-size: 1em;
 		text-transform: uppercase;
-		text-align: center;
 		font-weight: 700;
-		margin-top: 2em;
+		position: absolute;
+		top: 20em;
+		left:10em;
 	}
 
 
