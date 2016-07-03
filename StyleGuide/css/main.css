@@ -38,6 +38,29 @@ a {
     color: white;
 }
 
+
+footer {
+    background-color: #111111;
+    color: #eeeeee;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+footer p{
+    font-size: 0.8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover, footer a:focus {
+    color:#E54F51;
+}
+
 /*
     COLOUR PALETTE -----------------------
 */
