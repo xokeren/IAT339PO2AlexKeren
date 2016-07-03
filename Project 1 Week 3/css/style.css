@@ -3,16 +3,27 @@
   MAIN STYLING 
   Default styling for main.css 
 */
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+          box-sizing: border-box;
+   height: 100%;
+}
 
-* {
-	margin: 0;
-	font-family: "Hammersmith One", sans-serif;
-	
-
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  font-family: "Hammersmith One", sans-serif;
+  /* Removes padding behaviour on widths */
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
-
+	width: 100%;
 }
 
 h1 {
@@ -65,6 +76,40 @@ input [radio]{
 
 
 
+footer {
+	background-color: #111111;
+    color: #eeeeee;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+footer p{
+	font-size: 0.8em;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+footer a:hover, footer a:focus {
+	color:#E54F51;
+}
+
+.siteIntro h2{
+	margin:0 14em 0 14em;
+}
+
+.siteIntro p {
+	padding-bottom: 0.5em;
+	margin:0 12em 0 12em;
+}
+
+#food h2, #drinks h2 {
+	margin-left: 2em;
+}
 .smaller {
 	font-size: 0.75rem;
 }
@@ -92,14 +137,24 @@ input [radio]{
 	text-align: center;
 }
 
+.topNavBanner h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+nav {
+	position: fixed;
+	z-index: 999;
+}
 /*
   ACOUNT USER
 */
 
 .topNavUserAccount {
-	width: 40%;
+	width: 100%;
 	height: 16vh;
-	margin: auto;
 }
 
 .accountIcon {
@@ -118,7 +173,7 @@ input [radio]{
 #mainWindow {
 	z-index: 997;
 	width: 94vw;
-	height: 86vh;
+	height: auto;
 	overflow: scroll;
 	transition: width 0.5s ease-out;
 	padding-top: 52vh;
@@ -127,6 +182,8 @@ input [radio]{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	    box-sizing: border-box;
+	        overflow-x: hidden;
 }
 .mainWindowDim {
 	position: fixed;
@@ -171,18 +228,12 @@ input [radio]{
 
 .dimmedBG {
 
-padding-top: 8vh;
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,131313+100&0+0,1+15,1+100 */
-
-background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(3,3,3,1) 15%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
-
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(3,3,3,1) 15%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
-
-background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(3,3,3,1) 15%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
-
+	padding-top: 8vh;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,131313+100&0+0,1+15,1+100 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(3,3,3,1) 15%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(3,3,3,1) 15%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(3,3,3,1) 15%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
 }
 
 /*
@@ -197,6 +248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .drinkItem img{
 	height: 50%;
 }
+
 /* PRODUCT BOX */
 
 .boxes {
@@ -222,6 +274,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         width: 100%;
     }
 }
+
 /*
   BUTTONS
 */
@@ -316,7 +369,6 @@ margin-top: 1em;
 	width: 4vw;
 	display: table-cell;
 	margin: 0;
-	
 	padding-left: 1em;
 	padding-right: 1.5em;
 	background-color: #E54F51;
@@ -354,13 +406,6 @@ margin-top: 1em;
 	padding-right: 20em;
 	padding-top: 6em;
 }
-.orderItems {
-	color: white;
-	padding-top: 1em;
-}
-input {
-    width: 100%;
-}
 
 .buttonPosition {
 position: absolute;
@@ -386,7 +431,7 @@ width: 100%;
 /*
 	PRICE
 */
-.price {
+	.price {
 		font-size: 1em;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -399,31 +444,30 @@ width: 100%;
 /*
   GRID
 */
-.grid-container {
-        width : 100%;
-        max-width : 1200px; 
- }
 
-.row, 
-.column {
-    box-sizing: border-box;
+/* Attribute selector */
+[class*='column-'] {
+  float: left;
+  padding: 10px;
 }
-
-.row:before,
+ 
+/* Floats last ".column-" to the right */
+[class*='column-']:last-of-type {
+  float: right;
+}
+ 
+/* Clearfix */
 .row:after {
-    content: " ";
-    display: table;
+  content: "";
+  display: table;
+  clear: both;
 }
-
-.row:after {
-    clear: both;
-}
-
-
 
 .column {
     position: relative;
     float: left;
+    display: table-row;
+
 }
 
 .column + .column {
@@ -431,6 +475,7 @@ width: 100%;
 }
 
 
+/* Main Widths */
 .column-1 {
     width: 6.86666666667%;
 }
@@ -479,4 +524,51 @@ width: 100%;
     width: 100%;
 }
 
+/* iPads (portrait and landscape) ----------- */
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	
+    .siteIntro h2{
+	margin:0 9em 0 9em;
+}
+
+	.price {
+		left:4em;
+		top: 17em;
+	}
+
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+    .column-4 {
+    	width: 100%;
+    }
+    #drinks h2, #food h2 {
+    	margin-left: 2em;
+    }
+    .siteIntro {
+    	width: 100%;
+    	background-color: rgba(0,0,0,0.8);
+    }
+    .siteIntro h2{
+	margin:0 3em 0 3em;
+}
+
+	.siteIntro p {
+	padding-bottom: 0.5em;
+	margin:0 2em 0 2em;
+	}
+
+	.price {
+		left:8em;
+		top: 18em;
+	}
+
+	.topNavBanner h1 {
+		margin-left: -2em;
+		width: 100%;
+	}
+
+}
